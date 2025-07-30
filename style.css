@@ -28,4 +28,8 @@ body{
     display:none ;
     transition:all 1s;
 }
+td {
+  max-width: 200px; /* adjust as needed */
+  word-break: break-word;
+}
 

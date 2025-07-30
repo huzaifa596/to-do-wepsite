@@ -41,54 +41,88 @@
         </div>
       </div>
 
-<!-- ---------------------------task adder------------------------- -->
-    <div id="form" class="rounded-3 my-3 p-3 container " style="background-color: rgb(53, 54, 54);">
- <form class="container mt-3 d-flex justify-content-around flex-wrap " id="form" >
-  <div class="py-3">
-    <h6>Enter Task Name:</h6>
-  <input type="text" placeholder="TASK NAME"  class="px-4 rounded-3 border-0 py-2" style="color:black" id="name">
-  </div>
-  <div class="py-3"><h6>Enter Date:</h6>
-  <input type="date" placeholder="TASK NAME" style="color:black"  class="px-5 rounded-3 border-0 py-2" id="date" required></div>
-  
+      <!-- ---------------------------task adder------------------------- -->
+      <div
+        id="form"
+        class="rounded-3 my-3 p-3 container"
+        style="background-color: rgb(53, 54, 54)"
+      >
+        <form
+          class="container mt-3 d-flex justify-content-around flex-wrap"
+          id="form"
+        >
+          <div class="py-3">
+            <h6>Enter Task Name:</h6>
+            <input
+              type="text"
+              placeholder="TASK NAME"
+              class="px-4 rounded-3 border-0 py-2"
+              style="color: black"
+              id="name"
+            />
+          </div>
+          <div class="py-3">
+            <h6>Enter Date:</h6>
+            <input
+              type="date"
+              placeholder="TASK NAME"
+              style="color: black"
+              class="px-5 rounded-3 border-0 py-2"
+              id="date"
+              required
+            />
+          </div>
 
-  <div class="py-3">
-   <h6>Status</h6>
-    <label for="complete">Complete</label>
-    <input type ="radio" style="color:white" id="complete" name="status" class="me-3" value="completed" required>
-    <label for="incomplete">InComplete</label>
+          <div class="py-3">
+            <h6>Status</h6>
+            <label for="complete">Complete</label>
+            <input
+              type="radio"
+              style="color: white"
+              id="complete"
+              name="status"
+              class="me-3"
+              value="completed"
+              required
+            />
+            <label for="incomplete">InComplete</label>
 
-    <input type ="radio" style="color:white"  name="status" id="incomplete" class="me-3" value="incompleted" required>
-  </div>
-  
-  </form>
-<div class="w-100 text-center my-3"><button type="button" class="btn btn-primary px-3 py-1  text-center" id="f-submit" >submit</button></div>
-  
+            <input
+              type="radio"
+              style="color: white"
+              name="status"
+              id="incomplete"
+              class="me-3"
+              value="incompleted"
+              required
+            />
+          </div>
+        </form>
+        <div class="w-100 text-center my-3">
+          <button
+            type="button"
+            class="btn btn-primary px-3 py-1 text-center"
+            id="f-submit"
+          >
+            submit
+          </button>
+        </div>
+      </div>
 
- </div>
-
-
-
-
-
-
-<!-- ----------------------------------------------------------------- -->
-     <div class="task-manager container border rounded-3 mt-4 p-0">
-  <table class=" text-center w-100 m-0 p-0  ">
-    <thead class=""  >
-      <tr class="border-bottom">
-        <th scope="col-2">Number</th>
-        <th scope="col-6">Task Name</th>
-        <th scope="col">Date</th>
-        <th scope="col">Status</th>
-      </tr>
-    </thead>
-    <tbody class="tb">
-    </tbody>
-  </table>
-</div>
-
-     
+      <!-- ----------------------------------------------------------------- -->
+      <div class="task-manager container border rounded-3 mt-4 p-0">
+        <table class="text-center w-100 m-0 p-0">
+          <thead class="">
+            <tr class="border-bottom">
+              <th scope="col-2 " class="border-end">Number</th>
+              <th scope="col-6 " class="border-end">Task Name</th>
+              <th scope="col " class="border-end">Date</th>
+              <th scope="col">Status</th>
+            </tr>
+          </thead>
+          <tbody class="tb"></tbody>
+        </table>
+      </div>
     </main>
 
     <script

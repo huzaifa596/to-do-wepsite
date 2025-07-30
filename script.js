@@ -1,50 +1,49 @@
-
-let count=1;
+let count = 1;
 let newTaskBtn = document.querySelector(".task");
 let taskBody = document.getElementById("taskBody");
-let button =document.querySelector("#f-submit");
+let button = document.querySelector("#f-submit");
 newTaskBtn.addEventListener("click", () => {
-    document.querySelector("#form").style.display="block";
-//   const name = prompt("Enter name of task:");
-//   const date = prompt("Enter date of task:");
-//   const status = prompt("Enter status:");
+  document.querySelector("#form").style.display = "block";
+
 });
 
+button.addEventListener("click", () => {
+  let name = document.querySelector("#name");
+  const dateValue = document.querySelector("#date").value;
+  const status = document.querySelector('input[name="status"]:checked');
 
-button.addEventListener('click',()=>
-{ 
-    alert("yes");
-
-  let name=document.querySelector("#name");
-   const dateValue = document.querySelector("#date").value;
-   const status = document.querySelector('input[name="status"]:checked');
-
-      if (name && date && status ) {
-    
-
+  if (name && date && status) {
     const tr = document.createElement("tr");
-   let tb=document.querySelector(".tb");
+    tr.classList.add("border-bottom");
+    let tb = document.querySelector(".tb");
+
     const nameTd = document.createElement("td");
     nameTd.innerText = name.value;
-     let number=document.createElement("td");
+    nameTd.classList.add("text-break", "text-wrap", "w-50", "border-end");
+    let number = document.createElement("td");
+    number.classList.add("border-end");
+
     const dateTd = document.createElement("td");
+    dateTd.classList.add("border-end");
     dateTd.innerText = date.value;
-   number.innerText=count;
+    number.innerText = count;
     const statusTd = document.createElement("td");
     statusTd.innerText = status.value;
-     
+    statusTd.classList.add("border-end");
+
     // Append cells to row
     tr.appendChild(number);
     tr.appendChild(nameTd);
     tr.appendChild(dateTd);
     tr.appendChild(statusTd);
-count++;
+    count++;
     tb.appendChild(tr);
 
-    name.value="";
-    date.value="";
-    status.checked=false;
+    name.value = "";
+    date.value = "";
+    status.checked = false;
+    alert("task successfully added");
   } else {
-    // alert("All fields are required!");
+    alert("All fields are required!");
   }
-})
+});
