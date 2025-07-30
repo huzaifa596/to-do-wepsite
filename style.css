@@ -1,0 +1,31 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color:white;
+    text-decoration: none;
+    list-style-type: none;
+}
+.navbar{
+    background-color: #292828;
+   font-family: "raleway";
+    
+}
+body{
+    background-color: #1d1d1d;
+
+}
+.task-manager{
+    color:#363636;
+    border-color: white;
+    height:70vh;
+    width:100vw;
+      
+   
+}
+
+#form{
+    display:none ;
+    transition:all 1s;
+}
+
