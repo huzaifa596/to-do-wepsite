@@ -47,3 +47,10 @@ button.addEventListener("click", () => {
     alert("All fields are required!");
   }
 });
+
+let cross=document.querySelector("#cross");
+
+cross.addEventListener("click",()=>{
+  document.querySelector("#form").style.display = "none";
+
+});
